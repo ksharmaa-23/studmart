@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> studentmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel ="stylesheet" href="studmart.css" >  
+                                                                                                
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      
+     <div class="nav-search">
+      <select class="search-select">
+        <option>All</option>
+      </select >
+      <input placeholder="search smart" class="search-input">
+      <div class="search-icon border">
+        <i class="fa fa-search " aria-hidden="true"></i>
+
+        
+      </div>
+    </div>
+    <div class="nav-lago border">
+      <div class="lago">
+      </div>
+     </div> 
+     
+     <div class="nav-address border">
+      <p class="add-first">
+        Deliver to
+      </p>
+      <div class="add-icon">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+ <select id="country-select" class="add-sec">
+      <option value="" disabled selected>COUNTRY </option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+    </select> 
+      </div>
+     </div>
+     <div class="nav-signin border" id="userAccount">
+      <a href="login.html" style="text-decoration: none; color: inherit;">
+      <p>
+        <span>Sign in</span>
+      </p>
+      
+      <p class="nav-second">
+        Account
+      </p>
+      </a>
+     </div>
+     
+     <div class="nav-addcart border">
+      <div class="cart">
+      <p>
+        Add to cart
+      </p>
+    </div>
+      <div class="add-cart ">
+        <i class="fa-duotone fa-solid fa-cart-plus"></i>
+      </div>
+
+     </div>
+     <div class="nav-return border">
+     <p>
+       <span>Returns</span>
+     </p>
+     <p class="nav-second">
+       orders
+
+     </p>
+     <div class="order-symobol">
+      <i class="fa-solid fa-truck"></i>
+     </div>
+    </div>
+    </div>
+    
+    <div class="panel">
+      <div class="panel-all">
+        <i class="fa-solid fa-bars"></i>
+        All
+      </div>
+      <div class="panel-ops">
+      <p>
+        Deals
+      </p>
+      <p>customer service</p>
+      <p>register</p>
+      <p>sell</p>
+      </div>
+    </div>
+    <div class="main-mess">
+      <p class="p-mss">
+        Smart Deals For Smart Minds
+      </p>
+    
+    </div>
+    
+    
+  </header> 
+  <div class="main-sec">
+  <div class="market-section">
+    <br>
+  
+    <div class="box1 b border">
+<div class="styl1">
+  <h4 > Stationary Item</h4>
+  <div class="image-sec1"></div>
+  
+  <p>show more
+  
+  </p>
+</div>
+      
+      </p>
+    </div>
+
+    <br>
+  
+    <div class="box2 b border">
+      <div class="styl2">
+  <h4 > colth  section </h4>
+  <div class="image-sec2"></div>
+  
+  <p>show more</p>
+  
+</div>
+      
+      </p>
+
+    </div><br>
+
+    
+    <div class="box3 b border">b3</div>
+    <br>
+  
+    <div class="box4 b ">b4</div>
+    <br>
+  
+    <div class="box5 b">b5</div>
+    <br>
+</div>
+  </div>
+  
+</div>
+<script>
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    const userAccount = document.getElementById("userAccount");
+
+    if (loggedInUser) {
+      // If user is logged in, show welcome + logout
+      userAccount.innerHTML = `
+        <p>Welcome, <b>${loggedInUser}</b></p>
+        <button onclick="logout()" style="background-color:#313177; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;"  >Logout</button>
+      `;
+    } else {
+      // If not logged in, show Sign in link
+      userAccount.innerHTML = `
+        <a href="login.html" style="text-decoration: none; color: inherit;">
+          <p><span>Sign in</span></p>
+          <p class="nav-second">Account</p>
+        </a>
+      `;
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html"; // redirect to login page after logout
+    }
+    </script>
+
+</body>
+
+</html>

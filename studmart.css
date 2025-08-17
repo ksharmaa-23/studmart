@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing:  border-box;
+}
+html,body,header{
+    overflow-x: hidden;
+}
+.navbar {
+    height: 70px;
+    background-color: rgba(3, 15, 102, 0.79);
+    color: aliceblue;
+    display:flex;
+    align-items: center;
+    flex-direction: row; 
+   justify-content:  space-evenly;
+}
+.nav-lago{
+    height :40px;
+width: 130px;
+text-align: center;
+}
+.lago{
+    background-image: url("image/Screenshot 2025-05-05 234837.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+
+}
+.border{
+    border:1.5px solid transparent;
+
+}
+.border:hover {
+    border : 1.5px solid white;
+}
+
+.add-first{
+    color: azure;
+  font-size: 1.2rem;
+  margin-left: 30px;
+
+}
+.add-sec{
+font-size: 1rem;
+margin-left:5px ;
+background-color: #313177; /* match navbar */
+  color: white;
+
+}
+
+
+.add-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 154, 34);
+    width: 600px;
+    height: 35px;
+    border-radius: 4px;
+
+}
+.search-select{
+  background-color:rgb(215, 231, 245);
+    width: 50px;
+    text-align: center; 
+    border-top-left-radius:  4px;
+    border-bottom-left-radius:  4px;
+    border: none;
+}
+.search-input{
+    width: 530px;
+    font-size: 1.2rem;
+    border: none;
+}
+.search-icon{
+    width:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(243, 230, 92);
+    border-top-right-radius:  4px;
+    border-bottom-right-radius:  4px;
+    color: black;
+}
+.nav-search:hover {
+    border: 2px solid  orange;
+}
+
+span{
+    font-weight: 0.8rem;
+}
+.nav-second
+{
+    font-family: 0.95rem;
+font-weight: 900;
+}
+.cart{
+    font-size :1rem;
+    
+}
+.add-cart  {
+    font-size: 1.5rem;
+}
+
+/** panel **/
+.panel{
+    height: 33px;
+    background-color: rgb(23, 17, 56);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-all{
+    margin-right: 40px;
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+   
+   
+
+}
+.panel-ops{
+           width: 85%;
+           font-size: 0.9rem;
+           
+}
+
+/**boby**/
+.main-sec{
+    
+    color: rgba(220, 243, 170, 0.884);
+    background-image: url("image/iwsxckflvoc0sfl1fld8.webp");
+     min-width:100vh;
+     min-width: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+    
+
+.main-mess{
+    background-color: rgba(3, 15, 102, 0.79);
+    color: rgb(211, 203, 44);
+    height: 45px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+}
+.p-mss{
+animation-duration:4s;
+animation-iteration-count: infinite;
+animation-name:  horizontalMove;       
+animation-direction: normal;     
+    animation-timing-function: linear;
+
+}
+@keyframes horizontalMove {
+    0% {
+        transform: translateX (calc(-100% ));   
+    }
+    
+    
+    100% {
+        transform: translatex(calc(100% ));  
+    }
+}
+/** market section **/
+.market-section{
+
+justify-content: space-between;
+
+}
+.b{
+    border: 2px solid black;
+    height: 220px;;
+    width: 25%;
+    margin-left: 15px;
+   
+    
+}
+.image-sec1{
+    background-image:url("image/WhatsApp Image 2025-08-02 at 17.25.48_9587c106.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+  
+    margin-top: 10x;
+   
+}
+.styl1{
+    margin-left: 12px;
+    margin-right: 12px;
+   
+}
+.image-sec2{
+    background-image:url("image/WhatsApp\ Image\ 2025-08-02\ at\ 17.25.48_ca72a4b1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+    margin-top: 10px;
+}
+.styl2{
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
