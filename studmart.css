@@ -219,4 +219,49 @@ justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
    
+
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .panel {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .panel-ops {
+    width: 100%;
+    text-align: center;
+  }
+
+  .market-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .b {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .image-sec1, .image-sec2 {
+    height: auto;
+    min-height: 200px;
+  }
 }
