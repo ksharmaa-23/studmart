@@ -218,7 +218,73 @@ justify-content: space-between;
 .styl2{
     margin-left: 10px;
     margin-right: 10px;
+
+    /*MOBILE RESPONSIVE */
+    @media screen and (max-width: 768px) {
+    
+    /* Navbar becomes vertical */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;   /* full width */
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;  /* take full width */
+        font-size: 1rem;
+    }
+
+    .search-select {
+        width: 60px;
+    }
+
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Market Section cards stack */
+    .market-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b {
+        width: 90%;   /* each product card takes full width */
+        margin: 10px 0;
+    }
+
+    /* Main message text smaller */
+    .main-mess {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* For very small screens like 480px */
+@media screen and (max-width: 480px) {
+    .search-input {
+        font-size: 0.9rem;
+    }
+    .add-first, .add-sec {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+}
    
 
 }
+
 
